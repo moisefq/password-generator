@@ -9,21 +9,21 @@ let passwordLength = document.getElementById("passwordLength")
 
 console.log(passwordLength.value)
 
-let password1 = ""
-let password2 = ""
 
 generateBtn.addEventListener("click", firstPassword)
 function firstPassword(){
+    let password1 = ""
+    let password2 = ""
     if (passwordLength.value !== ""){
         for (let i = 0; i <= passwordLength.value; i++){
             password1 += characters[Math.floor(Math.random() * characters.length)]
-            passwordOne.textContent = password1
+            
             password2 += characters[Math.floor(Math.random() * characters.length)]
-            passwordtwo.textContent = password2
+            
     }
-    password1 =""
-    password2 =""
-    } else if (passwordLength.value === "") {
+    passwordOne.textContent = password1
+    passwordtwo.textContent = password2
+    } else {
         alert("Password is requied")
     }
 }
