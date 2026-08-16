@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #1c1c1c;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 550px;
+    min-height: 550px;
+
+    padding: 115px 52px 50px;
+
+    background: #1f2937;
+}
+
+h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+h1 span {
+    color: #4adf86;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    color: #d5d4d8;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#generate-btn {
+    padding: 10px 17px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #10b981;
+    color: white;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    background: #0ea371;
+}
+
+hr {
+    margin: 35px 0 30px;
+
+    border: none;
+    border-top: 1px solid #374151;
+}
+
+.password-container {
+    display: flex;
+    gap: 20px;
+}
+
+.password-box {
+    width: 50%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #273549;
+
+    color: #55f991;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.password-length {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.password-length label {
+    color: #d5d4d8;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#passwordLength {
+    width: 150px;
+    padding: 9px 12px;
+
+    border: 1px solid #374151;
+    border-radius: 5px;
+
+    background: #273549;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+}
+
+#passwordLength::placeholder {
+    color: #6b7280;
+}
+
+#passwordLength:focus {
+    border-color: #4adf86;
+}
